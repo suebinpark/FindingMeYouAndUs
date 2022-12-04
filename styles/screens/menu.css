@@ -1,0 +1,29 @@
+.menu-bar {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 3vw;
+  bottom: 3vh;
+  font-size: 20vh;
+}
+.menu-bar a {
+  display: block;
+  text-decoration: none;
+  color: #f0f0f0;
+  margin: 1vh 0;
+  transition: all ease-in-out 0.4s;
+}
+.menu-bar a:hover {
+  color: rgb(80, 80, 80);
+}
+
+#astronaut {
+  position: absolute;
+  left: 65vw;
+  top: 20vh;
+  height: 25vw;
+  transition: all ease-in-out 0.4s;
+}
+#astronaut:hover {
+  transform: scale(3);
+}

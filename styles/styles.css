@@ -1,0 +1,23 @@
+@import "reset.css";
+
+@import "components/nav-bar.css";
+@import "components/background.css";
+
+@import "screens/index.css";
+@import "screens/menu.css";
+
+:root {
+  --main-bg-clr: #0f0f0f;
+  --main-txt-clr: #f0f0f0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--main-bg-clr);
+  color: var(--main-txt-clr);
+}

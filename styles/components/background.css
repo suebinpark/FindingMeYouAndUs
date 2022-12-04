@@ -1,0 +1,46 @@
+.background {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.background img {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+}
+.background__stars {
+  top: 0;
+  height: 100%;
+  filter: grayscale(80%) contrast(100%);
+}
+.background__land {
+  bottom: 0;
+  height: 40%;
+  filter: grayscale(90%) brightness(0.5) contrast(100%);
+  z-index: 10;
+}
+
+.background__welcome-title {
+  font-size: 14.5vw;
+  z-index: 3;
+}
+.background__welcome-button {
+  font-size: 4.5vw;
+  text-decoration: none;
+  text-align: center;
+  color: rgba(220, 220, 220, 0.6);
+  margin: 15px 0 50px 0;
+  z-index: 3;
+  transition: all ease-in-out 0.5s;
+}
+.background__welcome-button:hover {
+  color: rgb(220, 220, 220);
+  letter-spacing: 2vw;
+  text-shadow: rgba(255, 255, 255, 0.9) 1px 0 10px;
+}
