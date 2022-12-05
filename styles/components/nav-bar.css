@@ -11,7 +11,8 @@
 }
 
 .nav-bar__name {
-  font-size: 27px;
+  font-family: hwt-arabesque, sans-serif;
+  font-size: 30px;
   margin: 5px 0 0 5px;
   padding: 7px;
 }

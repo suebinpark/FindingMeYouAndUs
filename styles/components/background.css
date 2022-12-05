@@ -1,4 +1,8 @@
-.background {
+/*index.html - background
+menu.html - background2*/
+
+.background,
+.background2 {
   position: relative;
   width: 100vw;
   height: 100vh;
@@ -8,30 +12,40 @@
   align-items: center;
   overflow: hidden;
 }
-.background img {
+.background img,
+.background2 img {
   position: absolute;
   left: 0;
   width: 100%;
   object-fit: cover;
 }
-.background__stars {
+.background__stars,
+.background2__stars {
   top: 0;
   height: 100%;
   filter: grayscale(80%) contrast(100%);
 }
-.background__land {
+.background__land,
+.background2__land {
   bottom: 0;
   height: 40%;
   filter: grayscale(90%) brightness(0.5) contrast(100%);
-  z-index: 10;
+  z-index: 4;
 }
 
 .background__welcome-title {
-  font-size: 14.5vw;
+  font-family: hwt-arabesque, sans-serif;
+  font-size: 15vw;
   z-index: 3;
 }
+.background2__welcome-title {
+  font-family: hwt-arabesque, sans-serif;
+  -webkit-text-stroke: 0.35vw black;
+  font-size: 24vw;
+  z-index: 10;
+}
 .background__welcome-button {
-  font-size: 4.5vw;
+  font-size: 5vw;
   text-decoration: none;
   text-align: center;
   color: rgba(220, 220, 220, 0.6);
@@ -43,4 +57,9 @@
   color: rgb(220, 220, 220);
   letter-spacing: 2vw;
   text-shadow: rgba(255, 255, 255, 0.9) 1px 0 10px;
+}
+
+.circles-button,
+.menu-bar {
+  z-index: 8;
 }
