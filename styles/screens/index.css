@@ -19,24 +19,3 @@
   text-align: justify;
   font-size: calc(15px + 0.8vw);
 }
-
-.creator-info {
-  margin-top: 5vh;
-  color: var(--main-txt-clr);
-}
-.creator-info__top {
-  text-align: end;
-}
-.creator-info__top a {
-  text-decoration: none;
-  color: var(--main-txt-clr);
-}
-.creator-info hr {
-  border: 1px dashed var(--main-txt-clr);
-}
-.creator-info__content {
-  display: flex;
-  font-family: hwt-arabesque, sans-serif;
-  justify-content: space-between;
-  font-size: 25px;
-}

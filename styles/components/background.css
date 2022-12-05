@@ -32,7 +32,6 @@ menu.html - background2*/
   filter: grayscale(90%) brightness(0.5) contrast(100%);
   z-index: 4;
 }
-
 .background__welcome-title {
   font-family: hwt-arabesque, sans-serif;
   font-size: 15vw;
@@ -40,7 +39,7 @@ menu.html - background2*/
 }
 .background2__welcome-title {
   font-family: hwt-arabesque, sans-serif;
-  -webkit-text-stroke: 0.35vw black;
+  -webkit-text-stroke: 0.45vw rgb(102, 99, 85);
   font-size: 24vw;
   z-index: 10;
 }
@@ -48,15 +47,15 @@ menu.html - background2*/
   font-size: 5vw;
   text-decoration: none;
   text-align: center;
-  color: rgba(220, 220, 220, 0.6);
+  color: var(--light-clr);
   margin: 15px 0 50px 0;
   z-index: 3;
   transition: all ease-in-out 0.5s;
 }
 .background__welcome-button:hover {
-  color: rgb(220, 220, 220);
+  color: var(--main-txt-clr);
   letter-spacing: 2vw;
-  text-shadow: rgba(255, 255, 255, 0.9) 1px 0 10px;
+  text-shadow: var(--main-txt-clr) 2px 0 20px;
 }
 
 .circles-button,

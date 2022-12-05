@@ -16,8 +16,22 @@
   margin: 5px 0 0 5px;
   padding: 7px;
 }
+.nav-bar__name:hover {
+  color: rgba(220, 220, 220, 0.6);
+  transition: all ease-in-out 0.3s;
+}
+
 .nav-bar__icon {
   width: 50px;
   height: 52px;
   padding: 7px;
+}
+@keyframes blinkingIcon {
+  50% {
+    opacity: 0;
+  }
+}
+
+.nav-bar__icon:hover {
+  animation: blinkingIcon 1.2s infinite;
 }
