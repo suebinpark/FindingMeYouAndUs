@@ -5,12 +5,17 @@
 .creator-info__top {
   text-align: end;
 }
-.creator-info__top a {
+.creator-info__top,
+.creater-info__title {
   text-decoration: none;
   color: var(--main-txt-clr);
-  font-size: 30px;
+  font-size: 25px;
 }
-.creator-info__top a:hover {
+.creater-info__title {
+  cursor: pointer;
+}
+.creator-info__top:hover,
+.creater-info__title:hover {
   color: var(--light-clr);
   transition: all ease-in-out 0.3s;
 }
@@ -21,5 +26,4 @@
   display: flex;
   font-family: hwt-arabesque, sans-serif;
   justify-content: space-between;
-  font-size: 25px;
 }

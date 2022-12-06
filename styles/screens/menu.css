@@ -20,12 +20,11 @@
 
 .circles-button {
   background: inherit;
-  border: none;
   box-shadow: none;
   padding: 0;
   overflow: visible;
   cursor: pointer;
-  border: 1px solid rgba(255, 255, 255, 0.8);
+  border: 0.3vw solid rgba(255, 255, 255, 0.8);
   position: fixed;
   border-radius: 50%;
 }

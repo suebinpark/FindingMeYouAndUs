@@ -10,11 +10,31 @@
   </head>
   <body>
     <div id="nav-bar">
-      <span class="nav-bar__name">suebin</span>
+      <a href="suebin.html" class="nav-bar__name">suebin</a>
       <a href="menu.html"
         ><img class="nav-bar__icon" src="img/glow.png" title="Click me"
       /></a>
     </div>
-    <script src="js/script.js"></script>
+
+    <main class="user-content">
+      <form id="type-name" action="who.html">
+        <label for="name">Who are you?</label>
+        <input
+          class="type-name__input"
+          type="text"
+          placeholder="Name"
+          name="name"
+          required
+        />
+        <input type="submit" value="Continue" class="type-name__submit" />
+      </form>
+    </main>
+
+    <section id="user-info">
+      <h1>Hello, just for check.</h1>
+      <div class="user-info__name"></div>
+    </section>
+
+    <script src="js/nameInput.js"></script>
   </body>
 </html>

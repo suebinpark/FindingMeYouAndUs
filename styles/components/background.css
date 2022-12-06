@@ -29,8 +29,8 @@ menu.html - background2*/
 .background2__land {
   bottom: 0;
   height: 40%;
-  filter: grayscale(90%) brightness(0.5) contrast(100%);
   z-index: 4;
+  filter: grayscale(90%) brightness(0.6) contrast(100%);
 }
 .background__welcome-title {
   font-family: hwt-arabesque, sans-serif;
@@ -39,10 +39,21 @@ menu.html - background2*/
 }
 .background2__welcome-title {
   font-family: hwt-arabesque, sans-serif;
-  -webkit-text-stroke: 0.45vw rgb(102, 99, 85);
+  color: rgba(255, 255, 255, 0);
+  -webkit-text-stroke: 0.3vw rgb(255, 255, 255);
+  /* -webkit-text-stroke: 0.45vw rgb(102, 99, 85); */
   font-size: 24vw;
   z-index: 10;
 }
+/* .circles-button__number {
+  font-family: hwt-arabesque, sans-serif;
+  position: absolute;
+  color: rgba(255, 255, 255, 0.3);
+  -webkit-text-stroke: 0.3vw rgb(255, 255, 255, 0.8);
+  font-size: 60vw;
+  z-index: 9;
+} */
+
 .background__welcome-button {
   font-size: 5vw;
   text-decoration: none;
