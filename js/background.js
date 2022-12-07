@@ -1,15 +1,25 @@
 // Earth image changes by time
-// earthImage = document.querySelector("#nav_bar-icon");
-// //시간 체크 -> if 오후 6시 이후면 earth-night로 변환.
+// //시간 체크 -> 오후 6시 이후면 earth-night로 변환.
 
-const stars = document.querySelector(".background__stars");
+const planetImages = [
+  "beige.png",
+  "extremeRed.png",
+  "green.png",
+  "grey.png",
+  "purple.png",
+  "red.png",
+  "strange.png",
+];
+const randomPlanet =
+  planetImages[Math.floor(Math.random() * planetImages.length)];
+
 const planet = document.querySelector(".background__planet");
+planet.src = `img/planets/${randomPlanet}`;
+
 const welcomeText = document.querySelector(".background__welcome-title");
-const welcomeBtn = document.querySelector(".background__welcome-button");
 
 function interactiveSpace() {
   let value = window.scrollY;
-  stars.style.left = value * 0.2 + "px";
   welcomeText.style.marginTop = value * 1.05 + "px";
 }
 

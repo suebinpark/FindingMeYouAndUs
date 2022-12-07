@@ -1,9 +1,14 @@
+const startYourJourney = ["Start your journey."];
+
 circleAstronaut = document.querySelector(".circles-button:nth-child(1)");
 circlePlanet = document.querySelector(".circles-button:nth-child(2)");
 circleMore = document.querySelector(".circles-button:nth-child(3)");
 circleNumber = document.querySelector(".circles-button__number");
+
+//default
 menuTitle = document.querySelector(".background2__welcome-title");
 
+//hover animation
 circleAstronaut.addEventListener("mouseover", function () {
   menuTitle.innerText = "Who?";
   circleAstronaut.style.visibility = "visible";
@@ -28,22 +33,19 @@ circleMore.addEventListener("mouseover", function () {
 });
 
 circleAstronaut.addEventListener("mouseout", function () {
-  menuTitle.innerText = "";
-  circleNumber.innerText = "";
+  menuTitle.innerText = startYourJourney;
   circleAstronaut.style.visibility = "visible";
   circlePlanet.style.visibility = "visible";
   circleMore.style.visibility = "visible";
 });
 circlePlanet.addEventListener("mouseout", function () {
-  menuTitle.innerText = "";
-  circleNumber.innerText = "";
+  menuTitle.innerText = startYourJourney;
   circleAstronaut.style.visibility = "visible";
   circlePlanet.style.visibility = "visible";
   circleMore.style.visibility = "visible";
 });
 circleMore.addEventListener("mouseout", function () {
-  menuTitle.innerText = "";
-  circleNumber.innerText = "";
+  menuTitle.innerText = startYourJourney;
   circleAstronaut.style.visibility = "visible";
   circlePlanet.style.visibility = "visible";
   circleMore.style.visibility = "visible";

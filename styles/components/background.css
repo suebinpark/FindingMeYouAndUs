@@ -28,45 +28,39 @@ menu.html - background2*/
 .background__land,
 .background2__land {
   bottom: 0;
-  height: 40%;
+  height: 42%;
   z-index: 4;
-  filter: grayscale(90%) brightness(0.6) contrast(100%);
+  filter: grayscale(100%) brightness(0.6) contrast(100%);
 }
 .background__welcome-title {
   font-family: hwt-arabesque, sans-serif;
-  font-size: 15vw;
+  font-size: 20vw;
   z-index: 3;
 }
 .background2__welcome-title {
   font-family: hwt-arabesque, sans-serif;
   color: rgba(255, 255, 255, 0);
-  -webkit-text-stroke: 0.3vw rgb(255, 255, 255);
+  -webkit-text-stroke: 0.2vw rgb(255, 255, 255);
   /* -webkit-text-stroke: 0.45vw rgb(102, 99, 85); */
-  font-size: 24vw;
+  font-size: 20vw;
+  text-align: center;
   z-index: 10;
 }
-/* .circles-button__number {
-  font-family: hwt-arabesque, sans-serif;
-  position: absolute;
-  color: rgba(255, 255, 255, 0.3);
-  -webkit-text-stroke: 0.3vw rgb(255, 255, 255, 0.8);
-  font-size: 60vw;
-  z-index: 9;
-} */
 
 .background__welcome-button {
-  font-size: 5vw;
+  font-size: 4vw;
   text-decoration: none;
   text-align: center;
+  padding-bottom: 10vh;
   color: var(--light-clr);
-  margin: 15px 0 50px 0;
+  margin: 2vh 0 8vh 0;
   z-index: 3;
   transition: all ease-in-out 0.5s;
 }
 .background__welcome-button:hover {
   color: var(--main-txt-clr);
   letter-spacing: 2vw;
-  text-shadow: var(--main-txt-clr) 2px 0 20px;
+  text-shadow: white 2px 1px 10px;
 }
 
 .circles-button,
