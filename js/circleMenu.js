@@ -14,39 +14,41 @@ circleAstronaut.addEventListener("mouseover", function () {
   circleAstronaut.style.visibility = "visible";
   circlePlanet.style.visibility = "hidden";
   circleMore.style.visibility = "hidden";
-  console.log(circlePlanet.style);
-  // circleNumber.innerText = "1";
+  menuTitle.style.fontSize = "13vw";
 });
 circlePlanet.addEventListener("mouseover", function () {
   menuTitle.innerText = "Where?";
   circleAstronaut.style.visibility = "hidden";
   circlePlanet.style.visibility = "visible";
   circleMore.style.visibility = "hidden";
-  // circleNumber.innerText = "2";
+  menuTitle.style.fontSize = "13vw";
 });
 circleMore.addEventListener("mouseover", function () {
   menuTitle.innerText = "More...";
   circleAstronaut.style.visibility = "hidden";
   circlePlanet.style.visibility = "hidden";
   circleMore.style.visibility = "visible";
-  // circleNumber.innerText = "3";
+  menuTitle.style.fontSize = "13vw";
 });
 
-circleAstronaut.addEventListener("mouseout", function () {
+circleAstronaut.addEventListener("mouseleave", function () {
   menuTitle.innerText = startYourJourney;
   circleAstronaut.style.visibility = "visible";
   circlePlanet.style.visibility = "visible";
   circleMore.style.visibility = "visible";
+  menuTitle.style.fontSize = "18vw";
 });
-circlePlanet.addEventListener("mouseout", function () {
+circlePlanet.addEventListener("mouseleave", function () {
   menuTitle.innerText = startYourJourney;
   circleAstronaut.style.visibility = "visible";
   circlePlanet.style.visibility = "visible";
   circleMore.style.visibility = "visible";
+  menuTitle.style.fontSize = "18vw";
 });
-circleMore.addEventListener("mouseout", function () {
+circleMore.addEventListener("mouseleave", function () {
   menuTitle.innerText = startYourJourney;
   circleAstronaut.style.visibility = "visible";
   circlePlanet.style.visibility = "visible";
   circleMore.style.visibility = "visible";
+  menuTitle.style.fontSize = "18vw";
 });

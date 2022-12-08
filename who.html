@@ -11,21 +11,30 @@
   <body>
     <div id="nav-bar">
       <a href="suebin.html" class="nav-bar__name">suebin</a>
-      <a href="menu.html"
+      <a href="menuOthers.html"
         ><img class="nav-bar__icon" src="img/glow.png" title="Click me"
       /></a>
     </div>
 
     <main class="user-content">
       <form id="type-name" action="who.html">
-        <label for="name">Who are you?</label>
+        <label for="name"
+          >Who are you?<br /><span>in this space...</span></label
+        >
         <input
-          class="type-name__input"
+          class="type__input type-name__input"
           type="text"
           placeholder="Name"
           name="name"
           required
         />
+        <input
+          type="number"
+          placeholder="Age"
+          class="type__input type-detail__input"
+          required
+        />
+
         <input type="submit" value="Continue" class="type-name__submit" />
       </form>
       <img src="img/astronaut.png" id="astronaut" title="Who am I?" />
