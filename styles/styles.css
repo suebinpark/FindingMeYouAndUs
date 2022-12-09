@@ -11,7 +11,11 @@
 :root {
   --main-bg-clr: #0f0f0f;
   --main-txt-clr: #f0f0f0;
-  --light-clr: rgba(220, 220, 220, 0.6);
+  --light-clr: #dcdcdc99;
+}
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
 }
 
 html {

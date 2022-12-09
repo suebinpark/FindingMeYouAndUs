@@ -15,19 +15,19 @@
   color: var(--main-txt-clr);
   font-family: hwt-arabesque, sans-serif;
   font-size: 30px;
-  margin: 5px 0 0 5px;
-  padding: 7px;
+  margin: 7px 0 0 7px;
+  padding: 8px;
 }
 .nav-bar__name:hover {
   color: rgba(220, 220, 220, 0.6);
   transition: all ease-in-out 0.3s;
 }
 .nav-bar__name div {
-  width: 21px;
-  height: 21px;
-  border: 2px solid white;
+  width: 20px;
+  height: 20px;
+  border: 1.5px solid white;
   border-radius: 50%;
-  padding: 6px;
+  padding: 7px;
 }
 .nav-bar__name--others:hover {
   background-color: rgba(255, 255, 255, 0.6);
@@ -37,9 +37,20 @@
 .nav-bar__menu--earth {
   background-color: rgba(255, 255, 255, 0.6);
 }
+.nav-bar__menu--more {
+  background-color: rgba(255, 255, 255);
+}
 .nav-bar__name--earth:hover {
   background-color: rgba(255, 255, 255, 0);
   transition: all ease-in-out 0.3s;
+}
+.nav-bar__name--earth,
+.nav-bar__name--others {
+  cursor: pointer;
+}
+.nav-bar__menu--earth,
+.nav-bar__menu--others {
+  cursor: default;
 }
 .nav-bar__icon {
   width: 50px;

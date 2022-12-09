@@ -1,6 +1,6 @@
 const API_KEY = "6c60def50fed02be8d183797240fdbf4";
 
-function informWeather(position) {
+function canInformWeather(position) {
   const lat = position.coords.latitude;
   const lon = position.coords.longitude;
   const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
@@ -14,7 +14,7 @@ function informWeather(position) {
     });
 }
 
-function onGeoError() {
+function cannotInformWeather() {
   alert("Can't find your location.");
 }
-navigator.geolocation.getCurrentPosition(informWeather, onGeoError);
+navigator.geolocation.getCurrentPosition(canInformWeather, cannotInformWeather);

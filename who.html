@@ -4,41 +4,47 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="img/circle.png" rel="shortcut icon" />
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="stylesheet" href="https://use.typekit.net/ijh6oer.css" />
     <title>Who are you?</title>
   </head>
   <body>
     <div id="nav-bar">
-      <a href="suebin.html" class="nav-bar__name">suebin</a>
+      <a href="#" class="nav-bar__name"
+        ><div class="nav-bar__menu--more"></div
+      ></a>
       <a href="menuOthers.html"
         ><img class="nav-bar__icon" src="img/glow.png" title="Click me"
       /></a>
     </div>
 
-    <main class="user-content">
-      <form id="type-name" action="who.html">
-        <label for="name"
+    <main class="main-survey">
+      <form id="type-form" action="who.html">
+        <label for="name" class="label-name"
           >Who are you?<br /><span>in this space...</span></label
         >
         <input
-          class="type__input type-name__input"
+          class="type-name__input"
           type="text"
           placeholder="Name"
           name="name"
           required
         />
-        <input
-          type="number"
-          placeholder="Age"
-          class="type__input type-detail__input"
-          required
-        />
+        <input type="date" class="type-date__input" required />
+        <div class="type-color__input">
+          <input type="color" required />
+          <input type="color" required />
+        </div>
 
-        <input type="submit" value="Continue" class="type-name__submit" />
+        <input type="submit" value="Continue" class="type__submit--button" />
+        <a href="#user-info" class="type__submit--icon"
+          ><img src="img/bottomIcon.png"
+        /></a>
       </form>
-      <img src="img/astronaut.png" id="astronaut" title="Who am I?" />
     </main>
+
+    <!-- <img src="img/astronaut.png" id="astronaut" title="Who am I?" /> -->
 
     <section id="user-info">
       <h1>Hello, just for check.</h1>
@@ -46,5 +52,6 @@
     </section>
 
     <script src="js/nameInput.js"></script>
+    <script src="js/changeNavName.js"></script>
   </body>
 </html>

@@ -1,54 +1,39 @@
-const startYourJourney = ["Start your journey."];
+// const circleAstronaut = $(".circles-button:nth-child(1)");
+// const circlePlanet = $(".circles-button:nth-child(2)");
+// const circleMore = $(".circles-button:nth-child(3)");
+// const menuTitle = $(".background2__welcome-title");
 
-circleAstronaut = document.querySelector(".circles-button:nth-child(1)");
-circlePlanet = document.querySelector(".circles-button:nth-child(2)");
-circleMore = document.querySelector(".circles-button:nth-child(3)");
-circleNumber = document.querySelector(".circles-button__number");
+// $(circleAstronaut).hover(
+//   function () {
+//     $(menuTitle).text("Who?");
+//     $(menuTitle).css({ "font-size": "13vw" });
+//   },
+//   function () {
+//     $(menuTitle).text("Start your journey.");
+//     $(menuTitle).css({ "font-size": "18vw" });
+//   }
+// );
 
-//default
-menuTitle = document.querySelector(".background2__welcome-title");
+// $(circlePlanet).hover(
+//   function () {
+//     $(menuTitle).text("Where?");
+//     $(menuTitle).css({ "font-size": "13vw" });
+//   },
+//   function () {
+//     $(menuTitle).text("Start your journey.");
+//     $(menuTitle).css({ "font-size": "18vw" });
+//   }
+// );
 
-//hover animation
-circleAstronaut.addEventListener("mouseover", function () {
-  menuTitle.innerText = "Who?";
-  circleAstronaut.style.visibility = "visible";
-  circlePlanet.style.visibility = "hidden";
-  circleMore.style.visibility = "hidden";
-  menuTitle.style.fontSize = "13vw";
-});
-circlePlanet.addEventListener("mouseover", function () {
-  menuTitle.innerText = "Where?";
-  circleAstronaut.style.visibility = "hidden";
-  circlePlanet.style.visibility = "visible";
-  circleMore.style.visibility = "hidden";
-  menuTitle.style.fontSize = "13vw";
-});
-circleMore.addEventListener("mouseover", function () {
-  menuTitle.innerText = "More...";
-  circleAstronaut.style.visibility = "hidden";
-  circlePlanet.style.visibility = "hidden";
-  circleMore.style.visibility = "visible";
-  menuTitle.style.fontSize = "13vw";
-});
+// $(circleMore).hover(
+//   function () {
+//     $(menuTitle).text("More...");
+//     $(menuTitle).css({ "font-size": "13vw" });
+//   },
+//   function () {
+//     $(menuTitle).text("Start your journey.");
+//     $(menuTitle).css({ "font-size": "18vw" });
+//   }
+// );
 
-circleAstronaut.addEventListener("mouseleave", function () {
-  menuTitle.innerText = startYourJourney;
-  circleAstronaut.style.visibility = "visible";
-  circlePlanet.style.visibility = "visible";
-  circleMore.style.visibility = "visible";
-  menuTitle.style.fontSize = "18vw";
-});
-circlePlanet.addEventListener("mouseleave", function () {
-  menuTitle.innerText = startYourJourney;
-  circleAstronaut.style.visibility = "visible";
-  circlePlanet.style.visibility = "visible";
-  circleMore.style.visibility = "visible";
-  menuTitle.style.fontSize = "18vw";
-});
-circleMore.addEventListener("mouseleave", function () {
-  menuTitle.innerText = startYourJourney;
-  circleAstronaut.style.visibility = "visible";
-  circlePlanet.style.visibility = "visible";
-  circleMore.style.visibility = "visible";
-  menuTitle.style.fontSize = "18vw";
-});
+// //Start your journey.
