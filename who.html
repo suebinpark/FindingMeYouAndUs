@@ -19,6 +19,7 @@
       /></a>
     </div>
 
+    <img src="img/stars.png" class="wallpaper wallpaper__stars" />
     <main class="main-survey">
       <form id="type-form" action="who.html">
         <label for="name" class="label-name"
@@ -32,6 +33,12 @@
           required
         />
         <input type="date" class="type-date__input" required />
+        <input
+          type="text"
+          class="type-emotion__input"
+          placeholder="Emotions"
+          required
+        />
         <div class="type-color__input">
           <input type="color" required />
           <input type="color" required />
@@ -44,11 +51,23 @@
       </form>
     </main>
 
-    <!-- <img src="img/astronaut.png" id="astronaut" title="Who am I?" /> -->
+    <img src="img/astronaut.png" title="Who am I?" id="astronaut" />
 
     <section id="user-info">
-      <h1>Hello, just for check.</h1>
-      <div class="user-info__name"></div>
+      <div class="user-info__card">
+        <span class="user-info__name"></span>
+        <div class="user-info__details">
+          <p></p>
+          <p></p>
+        </div>
+
+        <hr class="user-info__hr" />
+        <p class="user-info__word">
+          <span>Now, I want to ask.</span><br />
+          How can I be myself<br />
+          when I am not sure who I really am?
+        </p>
+      </div>
     </section>
 
     <script src="js/nameInput.js"></script>

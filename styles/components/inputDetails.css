@@ -1,0 +1,116 @@
+.main-survey {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+#type-form {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.label-name {
+  font-family: hwt-arabesque, sans-serif;
+  font-size: 12vw;
+  line-height: 0.6;
+  margin-top: 12vh;
+  z-index: 2;
+}
+.label-name span {
+  font-size: 6vw;
+  color: var(--light-clr);
+}
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline-style: none;
+  background: transparent;
+  font-family: livory, sans-serif;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+input[type="color"] {
+  appearance: none;
+}
+input[type="text"]::placeholder {
+  color: "#8a8a8a";
+}
+.type-name__input,
+.type-date__input,
+.type-emotion__input,
+.type-color__input {
+  border: 1px solid var(--light-clr);
+  width: 55vw;
+  height: 6.5vh;
+  font-size: 3.5vh;
+  margin-bottom: 2vh;
+}
+.type-name__input:focus,
+.type-date__input:focus,
+.type-emotion__input:focus {
+  border-color: white;
+  box-shadow: var(--main-txt-clr) 2px 0 20px;
+  border-radius: 4vw;
+  transition: all ease-in-out 0.3s;
+}
+.type-name__input {
+  color: var(--light-clr);
+  margin-top: 8vh;
+  text-indent: 2vw;
+}
+.type-date__input {
+  color: var(--light-clr);
+  font-family: livory, sans-serif;
+  padding-left: 2vw;
+}
+.type-emotion__input {
+  color: var(--light-clr);
+  text-indent: 2vw;
+}
+.type-color__input {
+  display: flex;
+  height: 10vh;
+  align-items: center;
+  gap: 5%;
+  padding-left: 2vw;
+}
+.type-color__input input {
+  width: 45%;
+  height: 5vh;
+  margin: 0;
+  padding: 0;
+  border: 1px solid var(--light-clr);
+}
+.type-color__input input:focus {
+  border-color: white;
+  transition: all ease-in-out 0.3s;
+}
+.type__submit--button {
+  font-family: hwt-arabesque, sans-serif;
+  color: var(--light-clr);
+  border: none;
+  height: 6vh;
+  font-size: 3.5vh;
+  cursor: pointer;
+}
+.type__submit--button:hover {
+  color: var(--main-txt-clr);
+  transition: all ease-in-out 0.2s;
+}
+.type__submit--icon img {
+  height: 5vh;
+}

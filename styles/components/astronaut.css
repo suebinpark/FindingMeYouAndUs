@@ -1,0 +1,21 @@
+#astronaut {
+  width: 25vw;
+  position: absolute;
+  top: 23vh;
+  left: 67vw;
+  z-index: 1;
+  cursor: wait;
+}
+#astronaut:hover {
+  animation: floatingAstronaut 2.5s;
+  animation-delay: 0.5s;
+}
+
+@keyframes floatingAstronaut {
+  from {
+    transform: rotate(0deg) scale(1);
+  }
+  to {
+    transform: rotate(540deg) scale(0);
+  }
+}
