@@ -41,3 +41,39 @@
   font-family: livory;
   font-size: calc(14px + 0.7vw);
 }
+.return_top {
+  position: absolute;
+  top: 190vh;
+  left: 88vw;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.return_bottom {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  padding-top: 10px;
+  justify-content: center;
+  cursor: pointer;
+}
+.return_top:hover,
+.return_bottom:hover {
+  background-color: var(--light-clr);
+  transition: all ease-in-out 0.3s;
+}
+.return_top--button img,
+.type__submit--icon img {
+  width: 16px;
+  height: 16px;
+}
+.type__submit--icon img {
+  transform: rotate(180deg);
+}
