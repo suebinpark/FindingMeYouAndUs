@@ -68,8 +68,8 @@ input[type="text"]::placeholder {
 .type-emotion__input,
 .type-color__input {
   border: 1px solid var(--light-clr);
-  width: 50vw;
-  height: 7vh;
+  width: 55vw;
+  height: 6vh;
   font-size: calc(10px + 2vh);
   margin-bottom: 2vh;
 }
@@ -78,12 +78,12 @@ input[type="text"]::placeholder {
 .type-emotion__input:focus {
   border-color: white;
   box-shadow: var(--main-txt-clr) 2px 0 20px;
-  border-radius: 4vw;
+  border-radius: 4.5vw;
   transition: all ease-in-out 0.3s;
 }
 .type-name__input {
   color: var(--light-clr);
-  margin-top: 8vh;
+  margin-top: 10vh;
   text-indent: 2vw;
 }
 .type-date__input {
@@ -95,9 +95,10 @@ input[type="text"]::placeholder {
   color: var(--light-clr);
   text-indent: 2vw;
 }
+
 .type-color__input {
   display: flex;
-  height: 10vh;
+  height: 9vh;
   align-items: center;
   gap: 5%;
   padding-left: 2vw;
@@ -129,9 +130,6 @@ input[type="text"]::placeholder {
   color: var(--main-txt-clr);
   transition: all ease-in-out 0.2s;
 }
-.type__submit--icon img {
-  height: 5vh;
-}
 
 @media only screen and (max-width: 631px) {
   .label-name {
@@ -145,5 +143,11 @@ input[type="text"]::placeholder {
   .type-emotion__input,
   .type-color__input {
     font-size: calc(12px + 1vh);
+    width: 65vw;
+    height: 5.5vh;
+    margin-bottom: 1.2vh;
+  }
+  .type-color__input {
+    height: 8vh;
   }
 }

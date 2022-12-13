@@ -1,4 +1,4 @@
-.planets {
+.planets-container {
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
@@ -8,9 +8,9 @@
   align-items: center;
   justify-content: center;
 }
-.planets p {
+.planets-container p {
   font-family: hwt-arabesque, sans-serif;
-  font-size: calc(50px + 5vw);
+  font-size: calc(45px + 5vw);
   line-height: 0.8;
   margin: 5vh 7vh;
   animation: titleShadow 3s infinite;
@@ -20,12 +20,12 @@
   display: grid;
   align-content: center;
   justify-content: center;
-  padding: 0.5vh 0 3vh 0;
+  padding: 0.5vh 0 1vh 0;
   gap: 1.5vw;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
 }
-.planets-array div {
+.planet {
   width: 20vh;
   height: 20vh;
   border: 1px solid rgba(255, 255, 255, 0.6);
@@ -35,26 +35,52 @@
   align-items: center;
   cursor: pointer;
 }
-.planets-array div:hover {
+.planet.selected {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(0.96);
+}
+.planet:hover {
+  transform: scale(0.97);
   background-color: rgba(255, 255, 255, 0.3);
   transition: all 0.3s ease-in-out;
 }
-.planets-array div img {
+.planet img {
   object-fit: contain;
   width: 100%;
+}
+.planet__submit {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-family: hwt-arabesque, sans-serif;
+  color: var(--light-clr);
+  border: 1px solid var(--light-clr);
+  border-radius: 2vh;
+  height: 6vh;
+  margin: 1vh 10vh;
+  padding: 0 2vw;
+  font-size: 3vh;
+  cursor: pointer;
+}
+.planet__submit:hover {
+  background-color: var(--light-clr);
+  color: var(--main-txt-clr);
+  transition: all ease-in-out 0.2s;
 }
 
 #weather {
   width: 100vw;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  overflow: hidden;
+  touch-action: none;
 }
 .weather__card {
   font-family: livory, sans-serif;
+  position: absolute;
   width: 74%;
   height: 70%;
   border: 1px solid white;
@@ -62,24 +88,131 @@
   font-size: calc(14px + 0.7vw);
   line-height: 1.5;
   overflow: scroll;
+  overflow-x: hidden;
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
 }
-.weather__planetImage {
+
+.weather__image {
+  position: absolute;
+  width: 74vw;
+  height: 70vh;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather__input input {
+  border: 1px solid var(--light-clr);
+  height: 6vh;
+  color: var(--light-clr);
+}
+.weather__input input:nth-child(1) {
+  margin-bottom: 1vh;
+  text-indent: 2vw;
+  width: 55vw;
+}
+.weather__input input:nth-child(2) {
+  width: 25vw;
+  margin-bottom: 2vh;
+  cursor: pointer;
+}
+.weather__input input:nth-child(1):focus {
+  border-color: white;
+  box-shadow: var(--main-txt-clr) 2px 0 20px;
+  border-radius: 4.5vw;
+  transition: all ease-in-out 0.3s;
+}
+.weather__input input:nth-child(2):hover {
+  background-color: var(--light-clr);
+  color: var(--main-txt-clr);
+  border-radius: 4.5vw;
+  transition: all ease-in-out 0.2s;
+}
+
+.planet__name {
+  font-family: hwt-arabesque, sans-serif;
+  font-size: 8vw;
+  line-height: 1.2;
+  margin-top: 8vh;
+  text-shadow: rgba(255, 255, 255, 0.6) 1px 0 10px;
+}
+
+.weather__card-details {
+  margin-top: 10vh;
+  padding: 8vh 5vw;
+  height: 30%;
+  border: 5px double var(--light-clr);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.weather__card-details--main {
+  font-family: hwt-arabesque, sans-serif;
+  width: 100%;
+  font-size: 15vw;
+  line-height: 0.8;
+  margin-bottom: 8vh;
+  animation: titleShadow 3s infinite;
+}
+.weather__card-details--temp {
+  display: flex;
+  justify-content: space-around;
+  height: 80%;
   width: 100%;
 }
-
-@media only screen and (min-width: 768px) {
-  .planets-array {
-    grid-template-columns: repeat(4, 1fr);
+.weather__temp-text {
+  width: 45%;
+  display: flex;
+  font-size: 3vw;
+  line-height: 1;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  padding: 3vw;
+  border: 2px dashed var(--light-clr);
+}
+.weather__temp-text span {
+  font-family: hwt-arabesque, sans-serif;
+  margin-top: 1.5vh;
+  font-size: 5.5vw;
+  text-shadow: rgba(255, 255, 255, 0.5) 1px 0 10px;
+}
+@media only screen and (orientation: landscape) {
+  .weather__planetImage {
+    height: 90%;
+  }
+  .weather__input {
+    display: flex;
+    gap: 4px;
+  }
+  .weather__input input:nth-child(1),
+  .weather__input input:nth-child(2) {
+    font-size: calc(12px + 1vw);
   }
 }
-
-@media only screen and (max-width: 1160px) {
-  .planets-array {
-    grid-template-columns: repeat(3, 1fr);
-  }
+@media only screen and (orientation: portrait) {
   .planets-array div {
-    width: 23vw;
-    height: 23vw;
+    width: 25vw;
+    height: 25vw;
+    padding: 5px;
+  }
+  .weather__planetImage {
+    width: 90%;
+  }
+  .weather__input {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .weather__input input:nth-child(1),
+  .weather__input input:nth-child(2) {
+    width: 90%;
+    height: 5.5vh;
+    margin-bottom: 1.2vh;
+    font-size: calc(10px + 1.5vw);
   }
 }

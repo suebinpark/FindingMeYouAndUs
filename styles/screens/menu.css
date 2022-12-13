@@ -96,23 +96,23 @@
 
 .circles-button:nth-child(1) {
   /*astronaut*/
-  top: 75vh;
-  left: 74.5vw;
-  width: 10vw;
-  height: 10vw;
+  top: 70vh;
+  left: 50vw;
+  width: 20vh;
+  height: 20vh;
 }
 
 .circles-button:nth-child(2) {
   /*planet*/
   top: 17vh;
-  left: 70vw;
-  width: 22vw;
-  height: 22vw;
+  left: 60vw;
+  width: 30vh;
+  height: 30vh;
 }
 .circles-button:nth-child(3) {
   /*more*/
   top: 50vh;
   left: 10vw;
-  width: 14vw;
-  height: 14vw;
+  width: 14vh;
+  height: 14vh;
 }

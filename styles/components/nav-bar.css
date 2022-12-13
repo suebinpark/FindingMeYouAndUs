@@ -48,8 +48,7 @@
 .nav-bar__name--others {
   cursor: pointer;
 }
-.nav-bar__menu--earth,
-.nav-bar__menu--others {
+.nav-bar__menu--more {
   cursor: default;
 }
 .nav-bar__icon {

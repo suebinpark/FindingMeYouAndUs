@@ -21,35 +21,70 @@
 
     <img src="img/stars.png" class="wallpaper wallpaper__stars" />
 
-    <section class="planets">
+    <section class="planets-container">
       <p>Where are you?</p>
       <div class="planets-array">
-        <div class="planets__beige"><img src="img/planets/beige.png" /></div>
-        <div class="planets__extremeRed">
+        <div class="planet planets__beige">
+          <img src="img/planets/beige.png" />
+        </div>
+        <div class="planet">
           <img src="img/planets/extremeRed.png" />
         </div>
-        <div class="planets__green"><img src="img/planets/green.png" /></div>
-        <div class="planets__grey"><img src="img/planets/grey.png" /></div>
-        <div class="planets__purple"><img src="img/planets/purple.png" /></div>
-        <div class="planets__red"><img src="img/planets/red.png" /></div>
-        <div class="planets__strange">
+        <div class="planet">
+          <img src="img/planets/green.png" />
+        </div>
+        <div class="planet">
+          <img src="img/planets/grey.png" />
+        </div>
+        <div class="planet">
+          <img src="img/planets/purple.png" />
+        </div>
+        <div class="planet">
+          <img src="img/planets/red.png" />
+        </div>
+        <div class="planet">
           <img src="img/planets/strange.png" />
         </div>
-        <div class="planets__earth-day"><img src="img/earth-day.png" /></div>
-        <div class="planets__earth-night">
+        <div class="planet">
+          <img src="img/earth-day.png" />
+        </div>
+        <div class="planet">
           <img src="img/earth-night.png" />
         </div>
       </div>
+      <a href="#weather" class="planet__submit">Continue</a>
     </section>
 
     <main id="weather">
       <div class="weather__card">
-        <span></span>
-        <span></span>
-        <div></div>
+        <form action="where.html" class="weather__input">
+          <input type="text" placeholder="Name your planet..." />
+          <input type="submit" value="Save" class="weather__submit" />
+        </form>
+        <div class="weather__text">
+          <h1 class="planet__name"></h1>
+          <div class="weather__card-city"></div>
+          <div class="weather__card-details">
+            <p style="text-decoration: underline">Today's Weather</p>
+            <div class="weather__card-details--main"></div>
+            <div class="weather__card-details--temp">
+              <p class="weather__temp-text">
+                Current<br />Temperature<br />
+                <span></span>
+              </p>
+              <p class="weather__temp-text">
+                Wind<br />Chill<br />
+                <span></span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="weather__image">
         <img src="" class="weather__planetImage" />
       </div>
     </main>
+
     <footer class="return">
       <div class="return_top">
         <a href="#type-form" class="return_top--button"
@@ -62,10 +97,10 @@
         /></a>
       </div>
     </footer>
-    <script src="js/background.js"></script>
-    <script src="js/weather.js"></script>
-    <script src="js/changeNavName.js"></script>
     <script src="js/footer.js"></script>
+    <script src="js/changeNavName.js"></script>
     <script src="js/planetsSelection.js"></script>
+    <script src="js/namePlanet.js"></script>
+    <script src="js/weather.js"></script>
   </body>
 </html>

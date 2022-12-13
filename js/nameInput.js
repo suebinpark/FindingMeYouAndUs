@@ -10,8 +10,6 @@ const userColorTwo = document.querySelector(
   ".type-color__input input:nth-child(2)"
 );
 
-const submitButton = document.querySelector(".type__submit--icon");
-
 function UserNameSubmit() {
   const userName = userNameInput.value;
   const birthDate = userBirthDateInput.value;
