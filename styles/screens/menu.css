@@ -30,8 +30,10 @@
   }
 }
 .background2__welcome-title {
+  padding: 0 20px;
+  width: 100%;
   font-size: 18vw;
-  line-height: 0.9;
+  line-height: 0.85;
   text-align: center;
   z-index: 10;
   animation: startJourney 1.2s infinite;
@@ -44,8 +46,8 @@
   cursor: pointer;
 }
 .background2__description {
-  margin-top: 3vh;
-  font-size: 3vw;
+  margin-top: 5vh;
+  font-size: 3.6vw;
   z-index: 10;
   animation: startJourney 1.2s infinite;
   visibility: hidden;

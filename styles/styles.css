@@ -5,6 +5,7 @@
 @import "components/footer.css";
 @import "components/inputDetails.css";
 @import "components/astronaut.css";
+@import "components/starsflickering.css";
 
 @import "screens/index.css";
 @import "screens/menu.css";

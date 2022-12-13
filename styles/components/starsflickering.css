@@ -1,0 +1,15 @@
+@keyframes starsFlickering {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.wallpaper__stars {
+  filter: grayscale(80%) contrast(150%);
+  animation: starsFlickering 3s infinite;
+}

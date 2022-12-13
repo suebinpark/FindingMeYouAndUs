@@ -1,3 +1,49 @@
+.planets {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.planets p {
+  font-family: hwt-arabesque, sans-serif;
+  font-size: calc(50px + 5vw);
+  line-height: 0.8;
+  margin: 5vh 7vh;
+  animation: titleShadow 3s infinite;
+  text-align: center;
+}
+.planets-array {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  padding: 0.5vh 0 3vh 0;
+  gap: 1.5vw;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+.planets-array div {
+  width: 20vh;
+  height: 20vh;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.planets-array div:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+.planets-array div img {
+  object-fit: contain;
+  width: 100%;
+}
+
 #weather {
   width: 100vw;
   height: 100vh;
@@ -17,4 +63,23 @@
   line-height: 1.5;
   overflow: scroll;
   text-align: center;
+}
+.weather__planetImage {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .planets-array {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media only screen and (max-width: 1160px) {
+  .planets-array {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .planets-array div {
+    width: 23vw;
+    height: 23vw;
+  }
 }

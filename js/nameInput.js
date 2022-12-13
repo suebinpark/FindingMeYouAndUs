@@ -48,7 +48,8 @@ function ShowUserDetails() {
   When I first came here, there was an odd questionnaire asking me to fill in information about myself. I wrote down my name and the date of birth date. Then I chose two different colors. I can see they made up my gradient background.
   The weirdest thing is that I felt like I was being guided by my subconscious as I answered the questions. Now, I cannot be sure if it was really me.  I feel ${sessionStorage.getItem(
     "emotion"
-  )}. Who am I? And how could I fill in the specific information?`;
+  )}.
+  Who am I? And how could I fill in the specific information?`;
 }
 
 function ShowUserTime() {
@@ -106,13 +107,12 @@ function ShowUserTime() {
       (currentDate - userDate.getTime()) / 1000 / 60
     )} minutes and ${-parseInt(
       ((currentDate - userDate.getTime()) / 1000) % 60
-    )} seconds, I will exist in the world. But I'm already here! It might be god's mistake. If not, why am I here already? There are ${parseInt(
+    )} seconds, I will exist in the world. But I'm already HERE. It might be god's mistake. If not, why am I HERE already? There are ${parseInt(
       -timePassed
     )} days left until my arrival.`;
-  } else {
-    //오늘 태어난 사람
   }
 }
+
 function ShowBackGroundColors() {
   const userInfoSection = document.querySelector("#user-info");
   userInfoSection.style = `background:radial-gradient(${sessionStorage.getItem(
@@ -121,11 +121,13 @@ function ShowBackGroundColors() {
 }
 userNameForm.addEventListener("submit", UserNameSubmit);
 if (sessionStorage.getItem("username") != null) {
+  document.querySelector("footer").style.visibility = "visible";
   document.querySelector("#user-info").style.visibility = "visible";
   ShowUserDetails();
   ShowUserTime();
   setInterval(ShowUserTime, 1000);
   ShowBackGroundColors();
 } else {
+  document.querySelector("footer").style.visibility = "hidden";
   document.querySelector("#user-info").style.visibility = "hidden";
 }

@@ -14,7 +14,6 @@
   text-decoration: none;
   color: var(--main-txt-clr);
   font-family: hwt-arabesque, sans-serif;
-  font-size: 30px;
   margin: 7px 0 0 7px;
   padding: 8px;
 }
@@ -29,6 +28,7 @@
   border-radius: 50%;
   padding: 7px;
 }
+
 .nav-bar__name--others:hover {
   background-color: rgba(255, 255, 255, 0.6);
   transition: all ease-in-out 0.3s;

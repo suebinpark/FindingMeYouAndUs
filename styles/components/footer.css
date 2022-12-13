@@ -1,12 +1,12 @@
 .return {
   position: fixed;
-  top: 75vh;
+  top: 78vh;
   left: 91.5vw;
   z-index: 20;
 }
 .return_top,
 .return_bottom {
-  margin: 8px 0;
+  margin: 2vh 0;
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 50%;
   width: calc(25px + 0.8vw);
@@ -21,7 +21,6 @@
   background-color: var(--light-clr);
   transition: all ease-in-out 0.3s;
 }
-.return_top--button img,
-.type__submit--icon img {
+.return_top--button img {
   width: calc(10px + 0.6vw);
 }
