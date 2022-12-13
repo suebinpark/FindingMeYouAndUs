@@ -91,7 +91,7 @@ function ShowUserTime() {
     //과거에 태어난 사람
     document.querySelector(
       ".user-info__details p:nth-child(2)"
-    ).innerText = `\n✷\nAccording to my answers, I was born on ${userDay} ${userMonthText} ${userYear}.
+    ).innerText = `\n✷\nAccording to my answers, I was born on ${userDay} ${userMonthText}, ${userYear}.
     Well, it has been a while since I was born. ${parseInt(
       (currentDate - userDate.getTime()) / 1000 / 60
     )} minutes and ${
@@ -102,7 +102,7 @@ function ShowUserTime() {
     //미래에 태어날 사람
     document.querySelector(
       ".user-info__details p:nth-child(2)"
-    ).innerText = `\n✷\nAccording to my answers, I will be born on ${userDay} ${userMonthText} ${userYear}. In ${-parseInt(
+    ).innerText = `\n✷\nAccording to my answers, I will be born on ${userDay} ${userMonthText}, ${userYear}. In ${-parseInt(
       (currentDate - userDate.getTime()) / 1000 / 60
     )} minutes and ${-parseInt(
       ((currentDate - userDate.getTime()) / 1000) % 60

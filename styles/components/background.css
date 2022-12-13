@@ -37,18 +37,8 @@ menu.html - background2*/
   font-size: 20vw;
   z-index: 3;
 }
-.background2__welcome-title {
-  font-family: hwt-arabesque, sans-serif;
-  color: rgba(255, 255, 255, 0);
-  -webkit-text-stroke: 0.15vw rgb(255, 255, 255);
-  font-size: 18vw;
-  line-height: 0.9;
-  text-align: center;
-  z-index: 10;
-}
-
 .background__welcome-button {
-  font-size: 4vw;
+  font-size: 4.5vw;
   text-decoration: none;
   text-align: center;
   padding-bottom: 10vh;

@@ -1,21 +1,23 @@
 #astronaut {
-  width: 25vw;
+  width: 20vw;
   position: absolute;
-  top: 66vh;
+  top: 26vh;
   left: 66vw;
   z-index: 1;
-  cursor: wait;
+  cursor: help;
 }
 #astronaut:hover {
-  animation: floatingAstronaut 2.5s;
-  animation-delay: 0.5s;
+  animation: floatingAstronaut 2.4s infinite;
 }
 
 @keyframes floatingAstronaut {
-  from {
-    transform: rotate(0deg) scale(1);
+  0% {
+    transform: translateX(0);
   }
-  to {
-    transform: rotate(540deg) scale(0);
+  50% {
+    transform: translateX(-30px) translateY(+30px) rotate(-30deg);
+  }
+  100% {
+    transform: translateX(0);
   }
 }

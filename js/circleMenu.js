@@ -5,35 +5,43 @@
 
 // $(circleAstronaut).hover(
 //   function () {
-//     $(menuTitle).text("Who?");
-//     $(menuTitle).css({ "font-size": "13vw" });
+//     $(circleAstronaut).text("Who?");
 //   },
 //   function () {
-//     $(menuTitle).text("Start your journey.");
-//     $(menuTitle).css({ "font-size": "18vw" });
+//     $(circleAstronaut).text("");
 //   }
 // );
 
 // $(circlePlanet).hover(
 //   function () {
-//     $(menuTitle).text("Where?");
-//     $(menuTitle).css({ "font-size": "13vw" });
+//     $(circlePlanet).text("Where?");
 //   },
 //   function () {
-//     $(menuTitle).text("Start your journey.");
-//     $(menuTitle).css({ "font-size": "18vw" });
+//     $(circlePlanet).text("");
 //   }
 // );
 
 // $(circleMore).hover(
 //   function () {
-//     $(menuTitle).text("More...");
-//     $(menuTitle).css({ "font-size": "13vw" });
+//     $(circleMore).text("More...");
 //   },
 //   function () {
-//     $(menuTitle).text("Start your journey.");
-//     $(menuTitle).css({ "font-size": "18vw" });
+//     $(circleMore).text("");
 //   }
 // );
 
-// //Start your journey.
+const menuTitle = document.querySelector(".background2__welcome-title");
+const menuTitleDescription = document.querySelector(
+  ".background2__description"
+);
+
+function showDescription() {
+  menuTitleDescription.style.visibility = "visible";
+}
+function MenuPageInDely() {
+  setTimeout(function () {
+    location.href = "menu.html";
+  }, 4000);
+}
+menuTitle.addEventListener("click", showDescription);
+menuTitle.addEventListener("click", MenuPageInDely);

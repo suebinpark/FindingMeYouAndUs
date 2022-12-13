@@ -23,8 +23,8 @@
   transition: all ease-in-out 0.3s;
 }
 .nav-bar__name div {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   border: 1.5px solid white;
   border-radius: 50%;
   padding: 7px;
@@ -53,8 +53,8 @@
   cursor: default;
 }
 .nav-bar__icon {
-  width: 50px;
-  height: 52px;
+  width: 65px;
+  height: 66px;
   padding: 7px;
 }
 @keyframes blinkingIcon {
