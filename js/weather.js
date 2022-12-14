@@ -29,23 +29,35 @@ function weatherSuccess(position) {
           Did you name this planet ≪${planetName}≫? Remember: In order to change or rename the planet, simply click on it and save. But it's better to follow your instincts. There may be a reason why you picked it at first glance.
           \nHere we talk about the world on which we are standing. We forget the space we live in too easily.
           But isn't it important to me, you, and us? For me, 'home' is one of the most significant place in my life. At the same time, I feel we need to think about the definition of 'home'.
-          \n✷\nSo here are some questions...
-          Where is your home? How come did it become your home? Why do you call it 'home'? What makes the difference between 'home' and 'non-home'? If there is a unique/noticeable characteristic of a space that is called home, does your home display that characteristic? Can you feel it at home? If not, how do you feel about that? Can you truly say "Home Sweet Home" as you arrive home?
-          What makes a home a good home?
-          \n✷\nSo... let me see. It seems that you are now in ${data.name}, South Korea. Do you feel safe now? Or are you feeling insecure in your current position?
-          Space has a great impact on our emotions - whether it's a good thing or a bad thing!(To be honest, I wonder... if there's truly 'good' or 'bad' emotion.)
-          And that's why I wish for you to take a careful look at where we are and how we feel.`;
+          \n✷\nHere are some questions...
+
+          (1) Where is your home?
+          (2) How come did it become your home?
+          (3) Why do you call it 'home'?
+          (4) What makes the difference between 'home' and 'non-home'?
+          (5) If there is a unique/noticeable characteristic of a space that is called home, does your home display that characteristic? Can you feel it at home? If not, how do you feel about that?
+          (6) Can you truly say "Home Sweet Home" as you arrive home?
+          (7) What makes a home a good home?
+          \n✷\nQuestions aside, it seems that you are now in ${data.name}, South Korea. Do you feel safe now? Or are you feeling insecure in your current position?
+          Space greatly impacts our emotions - whether it's a good thing or a bad thing. (To be honest, I don't think good or bad feelings truly exist.)
+          And that's why I hope we take a careful look at where we are and how we feel.`;
         } else {
           locatedCity.innerText = `\n✷\nWelcome. Did you name this planet ≪${planetName}≫?
           Remember: In order to change or rename the planet, simply click on it and save. But it's better to follow your instincts. There may be a reason why you picked it at first glance.
           \nHere we talk about the world on which we are standing. We forget the space we live in too easily.
           But isn't it important to me, you, and us? For me, 'home' is one of the most significant place in my life. At the same time, I feel we need to think about the definition of 'home'.
-          \n✷\nSo here are some questions...
-          Where is your home? How come did it become your home? Why do you call it 'home'? What makes the difference between 'home' and 'non-home'? If there is a unique/noticeable characteristic of a space that is called home, does your home display that characteristic? Can you feel it at home? If not, how do you feel about that? Can you truly say "Home Sweet Home" as you arrive home?
-          What makes a home a good home?
-          \n✷\nSo... let me see. It seems that you are now in ${data.name}, South Korea. Do you feel safe now? Or are you feeling insecure in your current position?
-          Space has a great impact on our emotions - whether it's a good thing or a bad thing!(To be honest, I wonder... if there's truly 'good' or 'bad' emotion.)
-          And that's why I wish for you to take a careful look at where we are and how we feel.`;
+          \n✷\nHere are some questions...
+
+          (1) Where is your home?
+          (2) How come did it become your home?
+          (3) Why do you call it 'home'?
+          (4) What makes the difference between 'home' and 'non-home'?
+          (5) If there is a unique/noticeable characteristic of a space that is called home, does your home display that characteristic? Can you feel it at home? If not, how do you feel about that?
+          (6) Can you truly say "Home Sweet Home" as you arrive home?
+          (7) What makes a home a good home?
+          \n✷\nQuestions aside, it seems that you are now in ${data.name}, South Korea. Do you feel safe now? Or are you feeling insecure in your current position?
+          Space greatly impacts our emotions - whether it's a good thing or a bad thing. (To be honest, I don't think good or bad feelings truly exist.)
+          And that's why I hope we take a careful look at where we are and how we feel.`;
         }
       } else {
         if (userName != null) {
@@ -53,23 +65,35 @@ function weatherSuccess(position) {
           Did you name this planet ≪${planetName}≫? Remember: In order to change or rename the planet, simply click on it and save. But it's better to follow your instincts. There may be a reason why you picked it at first glance.
           \nHere we talk about the world on which we are standing. We forget the space we live in too easily.
           But isn't it important to me, you, and us? For me, 'home' is one of the most significant place in my life. At the same time, I feel we need to think about the definition of 'home'.
-          \n✷\nSo here are some questions...
-          Where is your home? How come did it become your home? Why do you call it 'home'? What makes the difference between 'home' and 'non-home'? If there is a unique/noticeable characteristic of a space that is called home, does your home display that characteristic? Can you feel it at home? If not, how do you feel about that? Can you truly say "Home Sweet Home" as you arrive home?
-          What makes a home a good home?
-          \n✷\nSo... let me see. It seems that you are now in ${data.name}. I don't think you're in Korea. Do you feel safe now? Or are you feeling insecure in your current position?
-          Space has a great impact on our emotions - whether it's a good thing or a bad thing!(To be honest, I wonder... if there's truly 'good' or 'bad' emotion.)
-          And that's why I wish for you to take a careful look at where we are and how we feel.`;
+          \n✷\nHere are some questions...
+
+          (1) Where is your home?
+          (2) How come did it become your home?
+          (3) Why do you call it 'home'?
+          (4) What makes the difference between 'home' and 'non-home'?
+          (5) If there is a unique/noticeable characteristic of a space that is called home, does your home display that characteristic? Can you feel it at home? If not, how do you feel about that?
+          (6) Can you truly say "Home Sweet Home" as you arrive home?
+          (7) What makes a home a good home?
+          \n✷\nQuestions aside, it seems that you are now in ${data.name}. I don't think you're in Korea. Do you feel safe now? Or are you feeling insecure in your current position?
+          Space greatly impacts our emotions - whether it's a good thing or a bad thing. (To be honest, I don't think good or bad feelings truly exist.)
+          And that's why I hope we take a careful look at where we are and how we feel.`;
         } else {
           locatedCity.innerText = `\n✷\nWelcome. Did you name this planet ≪${planetName}≫?
           Remember: In order to change or rename the planet, simply click on it and save. But it's better to follow your instincts. There may be a reason why you picked it at first glance.
           \nHere we talk about the world on which we are standing. We forget the space we live in too easily.
           But isn't it important to me, you, and us? For me, 'home' is one of the most significant place in my life. At the same time, I feel we need to think about the definition of 'home'.
-          \n✷\nSo here are some questions...
-          Where is your home? How come did it become your home? Why do you call it 'home'? What makes the difference between 'home' and 'non-home'? If there is a unique/noticeable characteristic of a space that is called home, does your home display that characteristic? Can you feel it at home? If not, how do you feel about that? Can you truly say "Home Sweet Home" as you arrive home?
-          What makes a home a good home?
-          \n✷\nSo... let me see. It seems that you are now in ${data.name}. I don't think you're in Korea. Do you feel safe now? Or are you feeling insecure in your current position?
-          Space has a great impact on our emotions - whether it's a good thing or a bad thing!(To be honest, I wonder... if there's truly 'good' or 'bad' emotion.)
-          And that's why I wish for you to take a careful look at where we are and how we feel.`;
+          \n✷\nHere are some questions...
+
+          (1) Where is your home?
+          (2) How come did it become your home?
+          (3) Why do you call it 'home'?
+          (4) What makes the difference between 'home' and 'non-home'?
+          (5) If there is a unique/noticeable characteristic of a space that is called home, does your home display that characteristic? Can you feel it at home? If not, how do you feel about that?
+          (6) Can you truly say "Home Sweet Home" as you arrive home?
+          (7) What makes a home a good home?
+          \n✷\nQuestions aside, it seems that you are now in ${data.name}. I don't think you're in Korea. Do you feel safe now? Or are you feeling insecure in your current position?
+          Space greatly impacts our emotions - whether it's a good thing or a bad thing. (To be honest, I don't think good or bad feelings truly exist.)
+          And that's why I hope we take a careful look at where we are and how we feel.`;
         }
       }
       locatedDetailsMain.innerText = `${data.weather[0].main}`;

@@ -1,5 +1,17 @@
-/* .test span {
-    background: linear-gradient(to right, #fbcac9, #8ca6ce);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  } */
+.wallpaper__stars {
+  z-index: 1;
+}
+.more__planet {
+  z-index: 2;
+}
+.more__land {
+  z-index: 4;
+}
+
+.more__title {
+  font-family: livory, sans-serif;
+  width: 90%;
+  font-size: 21vh;
+  text-align: center;
+  z-index: 5;
+}

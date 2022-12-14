@@ -52,6 +52,18 @@
   width: 100%;
   text-align: center;
 }
+.main-text__content--image {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-text__content a {
+  width: 49%;
+}
+.main-text__content a img {
+  width: 100%;
+}
 @media only screen and (max-width: 768px) {
   .main-text__img {
     width: 100%;
@@ -61,8 +73,11 @@
     align-items: center;
     margin-bottom: 20px;
   }
-  .main-text__img img {
-    width: 100%;
-    margin: 0;
+  /* .main-text__content--image {
+    flex-direction: column;
   }
+  .main-text__content a {
+    width: 100%;
+    margin-bottom: 10px;
+  } */
 }

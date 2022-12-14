@@ -47,7 +47,7 @@
 }
 .background2__description {
   margin-top: 5vh;
-  font-size: 3.2vw;
+  font-size: 3vw;
   z-index: 10;
   animation: startJourney 1.2s infinite;
   visibility: hidden;
@@ -63,18 +63,18 @@
   cursor: pointer;
   border-radius: 50%;
   position: absolute;
-  border: 0.18vw solid rgba(255, 255, 255, 0.7);
+  border: 0.18vw solid rgba(255, 255, 255, 0.5);
   z-index: 100;
   cursor: grab;
   color: var(--main-txt-clr);
-  font-family: hwt-arabesque, sans-serif;
+  font-family: livory, sans-serif;
 }
 .circles-button:focus {
   cursor: grabbing;
 }
 @keyframes circlesHoverEffect {
   0% {
-    border: 0.15vw solid rgba(255, 255, 255);
+    border: 0.18vw solid rgba(255, 255, 255);
     box-shadow: 0px 0 8vw 8vh rgba(255, 255, 255, 0.1),
       0px 0 12vw 12vh rgba(255, 255, 255, 0.05);
   }
@@ -83,9 +83,10 @@
     box-shadow: 0 0 15vw 20vh rgba(255, 255, 255, 0.3),
       0 0 20vw 30vh rgba(255, 255, 255, 0.2),
       0 0 40vw 40vh rgba(255, 255, 255, 0.05);
+    color: var(--light-clr);
   }
   100% {
-    border: 0.15vw solid rgba(255, 255, 255);
+    border: 0.18vw solid rgba(255, 255, 255);
     box-shadow: 0px 0 8vw 8vh rgba(255, 255, 255, 0.1),
       0px 0 12vw 12vh rgba(255, 255, 255, 0.05);
   }
@@ -96,38 +97,41 @@
 
 .circles-button:nth-child(1) {
   /*astronaut*/
-  top: 70vh;
-  left: 50vw;
-  width: 20vh;
-  height: 20vh;
+  bottom: 9vh;
+  left: 40vw;
+  width: 23vh;
+  height: 23vh;
+  font-size: 5vh;
 }
 
 .circles-button:nth-child(2) {
   /*planet*/
-  top: 17vh;
-  left: 63vw;
-  width: 30vh;
-  height: 30vh;
+  top: 18vh;
+  right: 10vw;
+  width: 33vh;
+  height: 33vh;
+  font-size: 6.5vh;
 }
 .circles-button:nth-child(3) {
   /*more*/
   top: 50vh;
-  left: 10vw;
-  width: 14vh;
-  height: 14vh;
+  left: 12vw;
+  width: 19vh;
+  height: 19vh;
+  font-size: 4vh;
 }
 @media only screen and (orientation: portrait) {
   .background2__welcome-title {
     padding: 0 20px;
     width: 100%;
-    font-size: 24vw;
-    line-height: 0.85;
+    font-size: 22vw;
+    line-height: 0.75;
     text-align: center;
     z-index: 10;
     animation: startJourney 1.2s infinite;
   }
   .background2__description {
-    margin-top: 3.5vh;
-    font-size: 3.8vw;
+    margin-top: 7vh;
+    font-size: 3.5vw;
   }
 }

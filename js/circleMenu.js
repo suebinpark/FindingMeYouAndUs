@@ -9,7 +9,7 @@ function showDescription() {
 function MenuPageInDely() {
   setTimeout(function () {
     location.href = "menu.html";
-  }, 4000);
+  }, 3000);
 }
 menuTitle.addEventListener("click", showDescription);
 menuTitle.addEventListener("click", MenuPageInDely);
