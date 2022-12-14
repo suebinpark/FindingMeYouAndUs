@@ -11,6 +11,7 @@
 @import "screens/menu.css";
 @import "screens/who.css";
 @import "screens/where.css";
+@import "screens/more.css";
 
 :root {
   --main-bg-clr: #0f0f0f;

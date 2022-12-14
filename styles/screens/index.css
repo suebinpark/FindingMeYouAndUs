@@ -15,14 +15,35 @@
 }
 .main-text__content {
   text-align: justify;
-  text-indent: 2vw;
-  font-size: calc(14px + 0.5vw);
+  margin-bottom: 10px;
+  font-size: calc(15px + 0.5vw);
+}
+.main-text__content a {
+  color: var(--main-txt-clr);
+}
+.main-text__content a:hover {
+  color: var(--light-clr);
+}
+.main-text:nth-child(1) p::selection,
+.main-text:nth-child(3) p::selection,
+.main-text:nth-child(4) p::selection {
+  color: transparent;
+}
+.main-text:nth-child(2) p::selection {
+  color: blue;
+  background-color: rgba(220, 220, 220, 0.7);
 }
 .main-text__img {
-  margin: 0 0 5px 20px;
-  width: 60%;
+  margin: 0 0 5px 15px;
+  width: 45%;
   float: right;
 }
+.main-text__img--small {
+  margin: 5px 15px 5px 0;
+  width: 45%;
+  float: left;
+}
+.main-text__img--small img,
 .main-text__img img {
   width: 100%;
 }

@@ -82,9 +82,9 @@
   font-family: livory, sans-serif;
   position: absolute;
   width: 74%;
-  height: 70%;
+  height: 75%;
   border: 1px solid white;
-  padding: 6vh 6vw;
+  padding: 6vh 8vw;
   font-size: calc(14px + 0.7vw);
   line-height: 1.5;
   overflow: scroll;
@@ -165,7 +165,7 @@
   width: 100%;
 }
 .weather__temp-text {
-  width: 45%;
+  width: 60%;
   display: flex;
   font-size: 3vw;
   line-height: 1;

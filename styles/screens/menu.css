@@ -47,7 +47,7 @@
 }
 .background2__description {
   margin-top: 5vh;
-  font-size: 3.6vw;
+  font-size: 3.2vw;
   z-index: 10;
   animation: startJourney 1.2s infinite;
   visibility: hidden;
@@ -63,7 +63,7 @@
   cursor: pointer;
   border-radius: 50%;
   position: absolute;
-  border: 0.15vw solid rgba(255, 255, 255);
+  border: 0.18vw solid rgba(255, 255, 255, 0.7);
   z-index: 100;
   cursor: grab;
   color: var(--main-txt-clr);
@@ -105,7 +105,7 @@
 .circles-button:nth-child(2) {
   /*planet*/
   top: 17vh;
-  left: 60vw;
+  left: 63vw;
   width: 30vh;
   height: 30vh;
 }
@@ -115,4 +115,19 @@
   left: 10vw;
   width: 14vh;
   height: 14vh;
+}
+@media only screen and (orientation: portrait) {
+  .background2__welcome-title {
+    padding: 0 20px;
+    width: 100%;
+    font-size: 24vw;
+    line-height: 0.85;
+    text-align: center;
+    z-index: 10;
+    animation: startJourney 1.2s infinite;
+  }
+  .background2__description {
+    margin-top: 3.5vh;
+    font-size: 3.8vw;
+  }
 }

@@ -1,6 +1,3 @@
-/*index.html - background
-menu.html - background2*/
-
 .background,
 .background2 {
   position: relative;
@@ -38,7 +35,7 @@ menu.html - background2*/
   z-index: 3;
 }
 .background__welcome-button {
-  font-size: 4.5vw;
+  font-size: calc(18px + 2vw);
   text-decoration: none;
   text-align: center;
   padding-bottom: 10vh;

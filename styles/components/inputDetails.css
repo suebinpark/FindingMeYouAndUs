@@ -28,6 +28,17 @@
     text-shadow: white 1px 0 15px;
   }
 }
+@keyframes titleSpanShadow {
+  0% {
+    text-shadow: rgb(190, 190, 190) 1px 0 15px;
+  }
+  50% {
+    text-shadow: rgba(100, 100, 100, 0.8) 1px 0 10px;
+  }
+  100% {
+    text-shadow: rgb(190, 190, 190) 1px 0 15px;
+  }
+}
 .label-name {
   width: 80%;
   font-family: hwt-arabesque, sans-serif;
@@ -41,7 +52,8 @@
 .label-name span {
   text-shadow: none;
   font-size: calc(24px + 1.5vw);
-  color: var(--light-clr);
+  color: rgba(200, 200, 200, 0.7);
+  animation: titleSpanShadow 3s infinite;
 }
 input {
   -webkit-appearance: none;

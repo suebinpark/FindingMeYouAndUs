@@ -17,7 +17,6 @@ for (let i = 0; i < planets.length; i++) {
     0
   );
 }
-
 function showPlanetImage() {
   let planetSource =
     planets[sessionStorage.getItem("selectedPlanet")].querySelector("img").src;
