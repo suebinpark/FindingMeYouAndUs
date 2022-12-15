@@ -53,7 +53,7 @@
   z-index: 10;
   animation: startJourney 1.2s infinite;
   visibility: hidden;
-  font-family: livory;
+  font-family: livory, sans-serif;
   color: var(--main-txt-clr);
 }
 
