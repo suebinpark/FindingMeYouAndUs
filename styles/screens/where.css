@@ -141,9 +141,9 @@
 }
 
 .weather__card-details {
-  margin-top: 10vh;
+  margin: 12vh 0 5vh 0;
   padding: 8vh 5vw;
-  height: 30%;
+  height: 60%;
   border: 5px double var(--light-clr);
   display: flex;
   flex-direction: column;
