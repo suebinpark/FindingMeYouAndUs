@@ -12,7 +12,7 @@
   font-family: hwt-arabesque, sans-serif;
   font-size: calc(45px + 5vw);
   line-height: 0.8;
-  margin: 5vh 7vh;
+  margin: 3vh 7vh;
   animation: titleShadow 3s infinite;
   text-align: center;
 }
@@ -57,7 +57,7 @@
   border: 1px solid var(--light-clr);
   border-radius: 2vh;
   height: 6vh;
-  margin: 1vh 10vh;
+  margin: 2vh 14vh;
   padding: 0 2vw;
   font-size: 3vh;
   cursor: pointer;
