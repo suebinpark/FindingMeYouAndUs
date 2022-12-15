@@ -73,11 +73,11 @@
     align-items: center;
     margin-bottom: 20px;
   }
-  .main-text__content--image {
+  /* .main-text__content--image {
     flex-direction: column;
   }
   .main-text__content a {
     width: 100%;
     margin-bottom: 10px;
-  }
+  } */
 }

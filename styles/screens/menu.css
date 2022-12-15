@@ -33,7 +33,7 @@
   padding: 0 20px;
   width: 100%;
   font-size: 18vw;
-  line-height: 0.85;
+  line-height: 0.9;
   text-align: center;
   z-index: 10;
   animation: startJourney 1.2s infinite;
@@ -109,9 +109,9 @@
 .circles-button:nth-child(2) {
   /*planet*/
   top: 18vh;
-  right: 10vw;
-  width: 33vh;
-  height: 33vh;
+  right: 7vw;
+  width: 34vh;
+  height: 34vh;
   font-size: 6.5vh;
 }
 .circles-button:nth-child(3) {
@@ -134,6 +134,7 @@
   }
   .background2__description {
     margin-top: 5vh;
-    font-size: 3.2vh;
+    width: 60%;
+    font-size: 2.5vh;
   }
 }
